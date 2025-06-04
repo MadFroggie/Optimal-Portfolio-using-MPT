@@ -1,67 +1,39 @@
-# 📊 Portfolio Optimization using Modern Portfolio Theory (Markowitz Model)
+# Portfolio Optimization using Modern Portfolio Theory
 
-This project demonstrates the implementation of **Modern Portfolio Theory (MPT)** using historical stock data. It helps an investor construct an optimal portfolio that maximizes expected return for a given level of risk, or equivalently, minimizes risk for a given level of return.
+## Project Overview
 
----
-
-## 📚 Theory - Modern Portfolio Theory
-
-Modern Portfolio Theory (MPT), introduced by **Harry Markowitz**, provides a mathematical framework for assembling a portfolio of assets to maximize expected return based on a given level of market risk.
-
-### ⚙️ Key Concepts and Formulas
-
-#### 1. **Portfolio Return**
-\[
-R_p = \sum_{i=1}^{n} w_i \cdot R_i
-\]
-Where:
-- \( R_p \) = Expected portfolio return
-- \( w_i \) = Weight of asset \( i \)
-- \( R_i \) = Expected return of asset \( i \)
-
-#### 2. **Portfolio Volatility (Standard Deviation)**
-\[
-\sigma_p = \sqrt{w^T \Sigma w}
-\]
-Where:
-- \( \Sigma \) = Covariance matrix of asset returns
-- \( w \) = Weight vector
-
-#### 3. **Sharpe Ratio**
-\[
-\text{Sharpe Ratio} = \frac{R_p - R_f}{\sigma_p}
-\]
-Where:
-- \( R_f \) = Risk-free rate (assumed 0 in this model)
+This project implements **Markowitz’s Modern Portfolio Theory** to optimize asset allocation for a portfolio of Indian equities.  
+The goal is to maximize the **Sharpe Ratio** by simulating thousands of portfolio combinations and applying mathematical optimization techniques.
 
 ---
 
-## 🧪 Data & Dependencies
+## Authors
 
-### ✅ Libraries Used
-- `numpy`
-- `pandas`
-- `matplotlib`, `seaborn`
-- `yfinance` *(for downloading stock data)*
-
-### 📁 Data Files
-The following `.csv` files must be in the project folder:
-- `KEC.csv`
-- `mazgon.csv`
-- `Reliance.csv`
-- `Tatamotors.csv`
-
-Ensure these files have at least:
-- `'Date '` (note the trailing space) column
-- `'vwap '` (trailing space again) column for price data
+- **Your Name** - Quantitative Analyst  
+  Contact: your.email@example.com
 
 ---
 
-## 🧩 Code Structure
+## Project Version
 
-### 1. **Data Import and Preparation**
-```python
-KEC = pd.read_csv('KEC.csv')
-mazagon = pd.read_csv('mazgon.csv')
-reliance = pd.read_csv('Reliance.csv')
-tata_motors = pd.read_csv('Tatamotors.csv')
+- Version 1.0
+
+---
+
+## Assets
+
+The analysis is performed on the following stocks (VWAP data from CSV files):
+
+- KEC.csv
+- mazgon.csv
+- Reliance.csv
+- Tatamotors.csv
+
+---
+
+## Dependencies
+
+Make sure to install the following Python libraries before running the code:
+
+```bash
+pip install numpy pandas matplotlib seaborn yfinance scipy
