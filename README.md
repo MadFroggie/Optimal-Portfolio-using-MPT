@@ -5,21 +5,6 @@
 This project implements **Markowitz’s Modern Portfolio Theory** to optimize asset allocation for a portfolio of Indian equities.  
 The goal is to maximize the **Sharpe Ratio** by simulating thousands of portfolio combinations and applying mathematical optimization techniques.
 
----
-
-## Authors
-
-- **Your Name** - Quantitative Analyst  
-  Contact: your.email@example.com
-
----
-
-## Project Version
-
-- Version 1.0
-
----
-
 ## Assets
 
 The analysis is performed on the following stocks (VWAP data from CSV files):
